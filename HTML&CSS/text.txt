@@ -1,0 +1,43 @@
+1. How internet works?
+A.  https://meet.google.com- URL     https-- is protocal
+   URL - uniform resource locater
+   scaler.com - Domain name --those are unique
+   ip- internent protocol- two types- ipv4, ipv6
+
+        https://scaler.com--URL
+                |
+            Domain name
+                |
+              DNS - domain name system
+                |
+            IP address
+    
+    when we click on link, this DNS system will connect domain name to IP address, 
+    these ip addresses are stored in some server, that are placed somewhere else in the world
+
+    there are multiple nodes connected to each other 
+    Multiple nodes are working to find the ip address is called ROUTING
+    these nodes connected to servers
+
+    we made request we got response
+
+    CLIENT SERVER REQUEST:
+    ---------------------
+
+    client- browser is client - which we will make request 
+                            routing
+    request - url- DNS - IP -------server - response
+       |                                      |
+       ---------------------------------------
+
+
+    HTML - Hypertext markup language
+
+    TO CREATE SHOPPING MALL:                SOFTWARE ENGINNERS
+    ------------------------                ------------------
+    1. Create blue print                    wireframe
+    2. structure                            HTML
+    3. Design your building                 CSS
+    4. Interactivity                        JS 
+
+what is wireframe?

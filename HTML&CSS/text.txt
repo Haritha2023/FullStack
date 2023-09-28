@@ -41,3 +41,5 @@ A.  https://meet.google.com- URL     https-- is protocal
     4. Interactivity                        JS 
 
 what is wireframe?
+what are symantic tags?
+what is srcset?

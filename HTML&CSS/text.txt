@@ -1,3 +1,6 @@
+Instructor Github link
+https://github.com/mrinal1224/Coolest_batch_fullstack
+
 1. How internet works?
 A.  https://meet.google.com- URL     https-- is protocal
    URL - uniform resource locater

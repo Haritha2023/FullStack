@@ -50,3 +50,38 @@ A.  https://meet.google.com- URL     https-- is protocal
 what is wireframe?
 what are symantic tags?
 what is srcset?
+
+CSS:
+
+ box-sizing: border-box;
+ -----------------------
+  /* by using property after adding padding box size won't increase but text inside box will 
+  move accordingly */
+
+  https://www.geeksforgeeks.org/css-box-model/
+  https://www.w3schools.com/css/css3_box-sizing.asp
+  
+  https://fonts.google.com/
+
+  9/10/2023 CSS-Position
+  ----------------------
+  The types of positioning in CSS are-
+1)static: this is the default value.We cannot use top,bottom,left and right and
+z-index value with static position.
+2)relative: the element is positioned relative to its normal position.We can 
+move relative element using top,bottom,left and right.
+3)absolute: the element is positioned absolutely to its first positioned parent.
+We can moved element and provide z-index. For example we position parent relative
+and move child using absolute property.
+
+An element with position: absolute; is positioned relative to the nearest positioned 
+ancestor (instead of positioned relative to the viewport, like fixed).
+however; if an absolute positioned element has no positioned ancestors, it uses the 
+document body, and moves along with page scrolling.
+Note: Absolute positioned elements are removed from the normal flow, and can overlap 
+elements.
+
+4)fixed: the element is positioned related to the browser window.
+5)sticky: the element is positioned based on the user's scroll position.After
+element goes to scroll position it act as fixed and we give it using top,left,
+right,bottom.

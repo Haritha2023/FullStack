@@ -1,3 +1,9 @@
+Important points:
+-----------------
+
+------in html page write ! it will give html code structure
+------if you want to write same code multiple times "div*4.box#box"
+it will give 4 divs with class box and id box
 Instructor Github link
 https://github.com/mrinal1224/Coolest_batch_fullstack
 https://youtu.be/i_23KUAEtUM?si=bH6PaZ6yTXnLXfTb - using git with visual stydio code
@@ -85,3 +91,33 @@ elements.
 5)sticky: the element is positioned based on the user's scroll position.After
 element goes to scroll position it act as fixed and we give it using top,left,
 right,bottom.
+
+FELX box:
+---------
+https://codingfantasy.com/games/flexboxadventure/play
+https://flexboxfroggy.com/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+flex-direction:row 
+main axis is x-axis and y-axis is cross axis
+so all div's will be aligned to the main axis horizontally
+
+flex-direction:column 
+main axis is y-axis and x-axis is cross axis
+so all div's will be arraged to the main axis vertically
+
+******* flex is working with main axis
+------------------------------
+******* align items working with cross axis
+------------------------------------ 
+
+HOW WILL YOU CENTER div
+========================
+display : flex 
+flex-direction : row; 
+justify-content : center 
+align-items : center
+
+https://css-tricks.com/snippets/css/complete-guide-grid/
+https://cssgridgarden.com/

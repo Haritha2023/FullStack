@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        height: 2000px;
+        width: 2000px;
+        margin: 100px;
+        border: 2px solid green;
+      }
+
+      .container {
+        border: 3px solid black;
+        background-color: coral;
+
+        height: 4000px;
+      }
+
+      .container2 {
+        height: 4000px;
+        background-color: aqua;
+        border: 3px solid brown;
+      }
+
+      img {
+        margin: 10px;
+      }
+      .image1 {
+        /* position: relative;
+        top: 100px;
+        left: 150px; */
+      }
+      .image2 {
+        /* position: absolute; */
+      }
+      .image3 {
+        /* top: 100px;
+        left: 150px; */
+        position: sticky;
+        top: 0;
+      }
+      .image4 {
+        position: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <img
+          src="../assets/poster1.webp"
+          alt="poster1"
+          height="250px"
+          width="250px"
+          class="image1"
+        />
+        <img
+          src="../assets/poster2.jpg"
+          alt="poster2"
+          height="250px"
+          width="250px"
+          class="image2"
+        />
+        <img
+          src="../assets/poster3.jpg"
+          alt="poster3"
+          height="250px"
+          width="250px"
+          class="image3"
+        />
+        <img
+          src="../assets/poster4.jpg"
+          alt="poster4"
+          height="250px"
+          width="250px"
+          class="image4"
+        />
+      </div>
+      <div class="container2"></div>
+    </div>
+  </body>
+</html>

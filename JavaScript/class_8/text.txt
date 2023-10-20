@@ -139,3 +139,22 @@ Elements and pseudo-elements - Example: h1, ::before
 https://specificity.keegan.st/
 
 https://www.codecademy.com/resources/docs/css/inheritance
+
+    JavaScript Questions
+    =====================
+1. what is JavaScript?
+2. what are uses and limitations of javascript?
+3. what is use of nodejs?
+4. datatypes in JavaScript?
+5. what is variables?
+6. what is variable declaration and intiablization?
+A. var a // declaration
+   a = 15 declaration
+7. what is difference between var, let and const?
+A. var allows variable declaration and intialization
+    let allows no variable declaration and intialization
+    const allows no variable declaration and no intialization
+8. what is null and undefined?
+A. undefined: when we did not intialize the variable
+    null: when we do not intialize the variable specifically to give null
+

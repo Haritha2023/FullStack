@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn-1">Say Hello</button>
+    <button id="btn-2">Say Hello</button>
+    <script>
+      //CLICKING THE BUTTON DISPLAY HELLO TO THE PAGE
+      //IDENTIFY THE BUTTON USING QUERYSELECTOR AND ADD EVENT USING EVENTLISTENERS
+      //----------------------------------------------------------------------------
+      //Q1 on Clicking the Button append hello to the page
+      //The Document method querySelector() returns the first Element within
+      //the document that matches the specified selector,
+      //or group of selectors. If no matches are found, null is returned.
+
+      // identify something in DOM
+
+      let btn1 = document.querySelector("#btn-1");
+      console.log("Getting button from querySelector", btn1);
+      let btn2 = document.getElementById("btn-2");
+      console.log("Getting button from getElementById", btn2);
+      //dblclick - double click , click - single click
+      btn1.addEventListener("dblclick", function () {
+        let hElem = document.createElement("h1");
+        hElem.innerText = "Hello Haritha";
+        let body = document.querySelector("body");
+        body.appendChild(hElem);
+        console.log("Button clicked");
+      });
+    </script>
+  </body>
+</html>

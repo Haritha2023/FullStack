@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: blue;
+      }
+      #p1 {
+        background-color: blue;
+        width: 150px;
+      }
+      #p2 {
+        background-color: blue;
+        min-width: 150px;
+      }
+      #p3 {
+        background-color: blue;
+        max-width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Paragraph without width</p>
+    <p id="p1">Paragraph with width</p>
+    <p id="p2">
+      Paragraph with min-width- it allows min-width and more than that
+    </p>
+    <p id="p3">Paragraph with max-width - it allows only max-width</p>
+  </body>
+</html>

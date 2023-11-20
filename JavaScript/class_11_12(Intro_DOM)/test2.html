@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #para1 {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores,
+      rerum repudiandae enim consectetur consequatur quae recusandae,
+      perferendis at quod illum, deleniti similique a eius nulla architecto
+      earum. Iure, deleniti.
+    </p>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores,
+      rerum repudiandae enim consectetur consequatur quae recusandae,
+      perferendis at quod illum, deleniti similique a eius nulla architecto
+      earum. Iure, deleniti.
+    </p>
+    <p id="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores,
+      rerum repudiandae enim consectetur consequatur quae recusandae,
+      perferendis at quod illum, deleniti similique a eius nulla architecto
+      earum. Iure, deleniti.
+    </p>
+    <script>
+      // WRITE THE JS PROGRAM HERE ====================================================================
+      let body = document.querySelector("body");
+      let para = document.querySelectorAll("#para1");
+      console.log(para);
+      for (let i = 0; i < para.length; i++) {
+        para[i].addEventListener("click", function (e) {
+          e.currentTarget.style.background = "red";
+        });
+        para[i].addEventListener("dblclick", function (e) {
+          e.currentTarget.style.background = "green";
+        });
+        // para[i].addEventListener("click", function (e) {
+        //   e.currentTarget.style.background = "red";
+        // });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Component</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .star{
+            font-size: 50px;
+            color:gray;
+        }
+        .filled{
+            color:gold;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Star Component</h1>
+        <div>
+            <span class="star" data-index="1">&#9733</span>
+            <span class="star" data-index="2">&#9733</span>
+            <span class="star" data-index="3">&#9733</span>
+            <span class="star" data-index="4">&#9733</span>
+            <span class="star" data-index="5">&#9733</span>
+        </div>
+        <h1>Rating Count <span id="count">${filledStars}</span></h1>
+    </div>
+    <script>
+        let container = document.querySelector('.container')
+        let stars = document.querySelectorAll('.star');
+        let filledStars = 0;
+        container.addEventListener('click', function(e){
+            console.log(e)
+           let currentClicked = e.target.dataset.index;
+           for (let i = 0; i < filledStars; i++) {
+             stars[i].classList.remove('filled');
+           }
+           for (let i = 0; i < currentClicked; i++) {
+             stars[i].classList.add('filled');
+           }
+           filledStars = currentClicked;
+        })
+       
+    </script>
+  </body>
+</html>

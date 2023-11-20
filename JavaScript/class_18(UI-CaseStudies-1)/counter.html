@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h3>Counter</h3>
+      <p id="counter">0</p>
+      <div>
+        <span>Increment/Decrement by</span>
+        <input type="number" id="factor" />
+      </div>
+      <div>
+        <button id="add">+</button>
+        <button id="substract">-</button>
+      </div>
+      <button id="reset">Reset</button>
+    </div>
+  </body>
+  <script>
+    let addBtn = document.querySelector("#add");
+    let substractBtn = document.querySelector("#substract");
+    let counter = document.querySelector("#counter");
+    let reset = document.querySelector("#reset");
+    let incrementfactor = document.querySelector("#factor");
+    let factor = 1;
+    addBtn.addEventListener("click", function () {
+      console.log("button clicked");
+      let total = parseInt(counter.innerText) + factor;
+      counter.innerText = total;
+    });
+
+    substractBtn.addEventListener("click", function () {
+      console.log("button clicked");
+      let total = parseInt(counter.innerText) - factor;
+      if (total < 0) {
+        total = 0;
+      }
+      counter.innerText = total;
+    });
+
+    incrementfactor.addEventListener("change", function (e) {
+      console.log(e);
+      factor = parseInt(e.target.value);
+
+      if (factor < 0) {
+        factor = 0;
+      }
+    });
+
+    reset.addEventListener("click", function (e) {
+      counter.innerText = 0;
+    });
+  </script>
+</html>

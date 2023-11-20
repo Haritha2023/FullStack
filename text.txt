@@ -7,6 +7,7 @@ it will give 4 divs with class box and id box
 Instructor Github link
 https://github.com/mrinal1224/Coolest_batch_fullstack
 
+
 https://github.com/mrinal1224/JS-Beginner-Notes/tree/main/notes -- JavaScript notes
 https://youtu.be/i_23KUAEtUM?si=bH6PaZ6yTXnLXfTb - using git with visual stydio code
 https://uicolors.app/create
@@ -165,6 +166,7 @@ A. var allows variable declaration and intialization
 8. what is null and undefined?
 A. undefined: when we did not intialize the variable
     null: when we do not intialize the variable specifically to give null
+9. what is event bubbling and event capturing?
 
                                     26/10/23
                                     ========

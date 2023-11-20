@@ -1,0 +1,25 @@
+{
+  "farms": [
+    {
+      "name": "Farm1",
+      "products": ["Eggs", "Milks", "Cheese"],
+      "resgitartionNo": 123456,
+      "employees": 25,
+      "isOperating": true
+    },
+    {
+      "name": "Farm2",
+      "products": ["Eggs", "Milks", "Cheese"],
+      "resgitartionNo": 123456,
+      "employees": 25,
+      "isOperating": true
+    },
+    {
+      "name": "Farm3",
+      "products": ["Eggs", "Milks", "Cheese"],
+      "resgitartionNo": 123456,
+      "employees": 25,
+      "isOperating": true
+    }
+  ]
+}

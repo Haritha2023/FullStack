@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Throttling</title>
+  </head>
+  <body>
+    <input type="text" placeholder="type to test Throttling" />
+  </body>
+  <script>
+    let count = 0;
+    function work() {
+      console.log("Network Request: ", count);
+      count++;
+    }
+
+    function throttle(work, interval) {
+      let flag = true;
+      return function optWorkFn() {
+        if (flag == true) {
+          work();
+          flag = false;
+
+          setTimeout(
+            function () {
+              flag = true;
+            }.interval
+          );
+        }
+      };
+    }
+
+    let input = document.querySelector("input");
+    let optimizedFn = throttle(work, 2000);
+    input.addEventListener("keydown", optimizedFn);
+  </script>
+</html>

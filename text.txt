@@ -13,6 +13,7 @@ https://youtu.be/i_23KUAEtUM?si=bH6PaZ6yTXnLXfTb - using git with visual stydio 
 https://uicolors.app/create
 https://colorhunt.co/
 https://coolors.co/
+https://www.scaler.com/topics/event-delegation-in-javascript/
 
 1. How internet works?
 A.  https://meet.google.com- URL     https-- is protocal

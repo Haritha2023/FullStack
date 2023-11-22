@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settimeout</title>
+    <style>
+      div {
+        height: 200px;
+        width: 200px;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div>I am the box</div>
+
+    <button onclick="stopAnimation()">Stop</button>
+  </body>
+  <script>
+    //settimeout basic example
+    function sayHello() {
+      console.log("Hello!");
+    }
+    //settimeout animation
+    function startAnimation() {
+      let target = document.querySelector("div");
+      target.style.width = "500px";
+    }
+
+    function startAnimation2() {
+      let target = document.querySelector("div");
+      target.style.width = "1000px";
+    }
+    setTimeout(sayHello, 1000);
+    let id = setTimeout(startAnimation, 3000);
+    console.log("1st timeout", id);
+    let id2 = setTimeout(startAnimation2, 5000);
+    console.log("1st timeout", id2);
+
+    //clear timeout example for stop
+    function stopAnimation() {
+      clearTimeout(id);
+    }
+  </script>
+</html>

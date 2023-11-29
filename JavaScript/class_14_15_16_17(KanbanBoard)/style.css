@@ -65,7 +65,7 @@ body{
  
  .remove-btn:hover{
      font-size: 3rem ;
-     background-color:red ;
+     background-color:#4BB543 ;
   }
 
 .main-cont{
@@ -81,7 +81,7 @@ body{
     background-color: coral;
 }
 
-.ticket-color{
+.ticket-color-cont{
     /* background-color: lightpink; */
     height: 1rem;
 }
@@ -89,10 +89,10 @@ body{
     height:2rem;
     background-color: yellow;
 }
-.lock-btn{
+.ticket-lock{
     display: flex;
     justify-content: flex-end;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-right: 1rem;
     margin-top: 6rem;
 }

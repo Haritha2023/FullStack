@@ -15,6 +15,10 @@ https://colorhunt.co/
 https://coolors.co/
 https://www.scaler.com/topics/event-delegation-in-javascript/
 
+-> Link : https://www.scaler.com/topics/javascript/this-keyword-javascript/
+https://github.com/kachwalUttamsharma/JS-OOPS-SCALER/tree/main/JS-OOPS/Class-1
+https://javascript.info/
+
 1. How internet works?
 A.  https://meet.google.com- URL     https-- is protocal
    URL - uniform resource locater

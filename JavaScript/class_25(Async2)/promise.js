@@ -1,4 +1,4 @@
-https://javascript.info/promise-basics
+//https://javascript.info/promise-basics
 
 // promises are 4stages
 // pending
@@ -18,8 +18,6 @@ let myPromise = new Promise(function (resolve, reject) {
     reject("No they are not equal");
   }
 });
-
-console.log(myPromise);
 
 //then and catch
 // it will work when the promise is resolved

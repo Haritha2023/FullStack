@@ -18,6 +18,10 @@ https://www.scaler.com/topics/event-delegation-in-javascript/
 -> Link : https://www.scaler.com/topics/javascript/this-keyword-javascript/
 https://github.com/kachwalUttamsharma/JS-OOPS-SCALER/tree/main/JS-OOPS/Class-1
 https://javascript.info/
+https://javascript.info/promise-basics
+
+https://www.educative.io/answers/what-is-promiserace-in-javascript
+https://dmitripavlutin.com/promise-all/
 
 1. How internet works?
 A.  https://meet.google.com- URL     https-- is protocal
@@ -154,10 +158,101 @@ https://www.codecademy.com/resources/docs/css/inheritance
 Query selector
 getElementById
 
+
+Important topics in javascript are
+===================================
+1. Variables
+2. functions
+- arrow functions
+-high order functions
+3. Array and objects
+-destructuring , rest , spread 
+4.conditional operator
+5.optional chaining
+6.array methods- map ,filter ,reduce ,sort
+7.event listeners - on click , on submit
+8. Intervals 
+9.callbacks , callbacks hell , promises , promise api
+10.async /await 
+11. Try /catch
+
     JavaScript Questions
     =====================
 1. what is JavaScript?
-2. what are uses and limitations of javascript?
+A. js is a language of web. It is used creat interactivity with web page
+developed by Brendan Eich, developed in 10 days, first js is Livescript
+for the popularity of jave, it is named as "JavaScript
+    It enables to create dynamically updating content, control multimedia, animated 
+images and pretty much everything
+
+
+1. web development - React js, Angular, nodejs  
+2. Mobile application - React native, Iconic
+3. Desktop application - electronjs- vscode 
+-------------------------------------------------------------------------------------
+2. what is difference between let, const, var?
+A.  console.log(a)//output: undefined
+        a IS ATTACHED WITH THE WINDOW OBJECT
+    console.log(b)// output: ReferenceError: cannot access'b' before intialization
+        b IS STORED IN TEMPORAL DEAD ZONE(TDZ), IT IS RESERVED SPACE FOR LET AND CONST VARIABLE
+    console.log(d) // output: d is not defined
+    var a = 100;
+    let b = 10 
+    let b = 100 //output: syntax error:identifier a is already declared
+
+    Temporal dead zone:(TDZ)
+    ------------------- the time phase between hoisting of variable which is intialized
+    with let and const and still intiablization of that variable
+
+        1. let and const are hoisted but its memory is allocated at other place than window which cannot be accessed before initialisation.
+        2. Temporal Dead Zone exists until variable is declared and assigned a value.
+        3. window.variable OR this.variable will not give value of variable defined using let or const.
+        4. We cannot redeclare the same variable with let/const(even with using var the second time).
+        5. const variable declaration and initialisation must be done on the same line.
+        6. There are three types of error: [1] referenceError {given where variable does not have memory allocation} [2] typeError {given when we change type that is not supposed to be changed} [3] syntaxError {when proper syntax(way of writing a statement) is not used}.
+        7. Use const wherever possible followed by let, Use var as little as possible(only if you have to). It helps avoid error.
+        8. Initialising variables at the top is good idea, helps shrinks TDZ to zero.
+--------------------------------------------------------------------------------
+3. what is execution context?
+A. Everything in javascript happens in execution context
+It has two phases 1. memory phase is also known as variable environment
+                    variables and functions are stored as key value pairs
+                2. code phase is also know as thread of execution
+                    in this code is executed line by line
+----------------------------------------------------------------------------------
+
+4. what is hoisting?
+A. we can access the variables and function before intialization is called hoisting
+    getName()//output: Hello world
+    console.log(x)// output: undefined
+    console.log(y)// output: y is not defined
+    greeting()//output: greeting is not a function
+    console.log(greeting)// output: undefined
+    var x = 7
+    function getName() { 
+        console.log('Hello World')
+    }
+
+    var greeting = ()=>{
+        console.log('Good Morning')
+    }
+    even before executing the code the memory is allocated for variable and function
+----------------------------------------------------------------------------
+5. How functions are first class citizens?
+A. In js both variable and functions are have same priority
+we can create a functions as variables
+    function sayHi(){
+        console.log('Hi')
+    }
+    sayHi()
+    //First class citizens
+    let sayHiFc = function(){
+        console.log('Hi')
+    }
+    console.log(sayHiFc)
+    sayHiFc()
+---------------------------------------------------------------------------------
+6. 
 3. what is use of nodejs?
 4. datatypes in JavaScript?
 5. what is variables?

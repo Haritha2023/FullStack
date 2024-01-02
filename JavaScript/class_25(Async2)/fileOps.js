@@ -60,3 +60,41 @@ function hadleError(err) {
 promiseReadFile1.then(readFileCallback).catch(hadleError);
 promiseReadFile2.then(readFileCallback).catch(hadleError);
 promiseReadFile3.then(readFileCallback).catch(hadleError);
+
+//promise practice
+
+// let myPromise = new Promise(function (resolve, reject) {
+//   let a = 4;
+//   let b = 4;
+
+//   if (a === b) {
+//     resolve("They are equal");
+//   } else {
+//     reject("They are not equal");
+//   }
+// });
+
+// myPromise.then(function (res) {
+//   console.log("res");
+// });
+// myPromise.catch(function (err) {
+//   console.log("err");
+// });
+
+// const fs = require("fs");
+
+// let promiseReadFile4 = fs.promises.readFile("f1.txt");
+// let promiseReadFile5 = fs.promises.readFile("f2.txt");
+// let promiseReadFile6 = fs.promises.readFile("f3.txt");
+
+// function readFile1(data) {
+//   console.log("the data is -> " + data);
+// }
+
+// function hadleError2(err) {
+//   console.log(error);
+// }
+
+// promiseReadFile4.then(readFile1).catch(hadleError2);
+// promiseReadFile5.then(readFile1).catch(hadleError2);
+// promiseReadFile6.then(readFile1).catch(hadleError2);

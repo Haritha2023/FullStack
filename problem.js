@@ -1,38 +1,87 @@
-let addbtn = document.querySelector(".add-button");
-let addflag = false;
-popCont = document.querySelector(".popup-container");
-mainCont = document.querySelector(".main-container");
-let textAreaCont = document.querySelector(".textarea-container");
-addbtn.addEventListener("click", function () {
-  addflag = !addflag;
-  console.log("Add button clicked");
-  console.log(addflag);
-  if (addflag == true) {
-    popCont.style.display = "flex";
-  } else {
-    popCont.style.display = "none";
-  }
-});
+//PROBLEMS GOT IN CONTEST
+// function outer() {
+//   let x = 5;
+//   return function inner(y) {
+//     x += y;
+//     return x;
+//   };
+// }
 
-popCont.addEventListener("keydown", function (e) {
-  let key = e.key;
-  //   console.log(key);
-  if (key == "Shift") {
-    // console.log("Ticket has created");
-    createTicket(textAreaCont.value);
-  }
-});
+// let closureFn = outer();
+// console.log(closureFn(3));
+// console.log(closureFn(2));
 
-function createTicket(ticketTask) {
-  //   console.log("Creating Ticket...");
-  let ticketCont = document.createElement("div");
-  ticketCont.setAttribute("class", "ticket-container");
-  ticketCont.innerHTML = `<div class="color-priority"></div>
-  <div class="id-container">15468xyz</div>
-  <div class="task-container">${ticketTask}</div>
-  <div class="lock-btn">
-    <i class="fa-solid fa-lock"></i>
-  </div>`;
-  mainCont.appendChild(ticketCont);
-  popCont.style.display = "none";
+// function outer() {
+//   let x = 10;
+//   function inner() {
+//     console.log(x);
+//   }
+//   x = 20;
+//   return inner;
+// }
+
+// let closureFn = outer();
+// closureFn();
+
+// function delay(ms) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(ms);
+//     }, ms);
+//   });
+// }
+
+// async function foo() {
+//   console.log("start foo");
+//   await delay(1000);
+//   console.log("Middle");
+//   await delay(2000);
+//   console.log("end foo");
+// }
+
+// foo();
+// console.log("after foo");
+
+// const number = 5;
+// function mul(x) {
+//   number = x * 2;
+// }
+
+// mul(10);
+// console.log(number);
+
+// const contacts = [
+//   { firstName: "Tom", lastName: "Jackson", number: "0123456" },
+//   { firstName: "Linda", lastName: "Garner", number: "11111111" },
+//   { firstName: "Adam", lastName: "Cooper", number: "2222222" },
+// ];
+
+// function lookUpProfile(name, prop) {
+//   const filteredContacts = contacts.filter((contact) => {
+//     return name === contact.firstName;
+//   });
+
+//   if (filteredContacts.length > 0) {
+//     if (filteredContacts[0][prop] !== undefined) {
+//       console.log(filteredContacts[0][prop]);
+//     } else {
+//       console.log("No such property");
+//     }
+//   } else {
+//     console.log("No such contact");
+//   }
+// }
+
+// // Example usage
+// lookUpProfile("Tom", "number");
+
+function printName(name) {
+  console.log(name);
 }
+
+function printFirstName(firstName, cb) {
+  console.log("First Name: " + firstName);
+  cb("Haritha");
+}
+
+printFirstName("Sadanala", printName);

@@ -5,165 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .body {
+      .container {
         margin: 0;
         padding: 0;
-      }
-      .container {
-        box-sizing: border-box;
-        height: 6rem;
-        background-color: darkgrey;
-        align-items: center;
         display: flex;
-      }
-      .menu-container {
-        background-color: black;
-        padding: 0.5rem;
-        display: flex;
-        width: 30%;
-        height: 35%;
-        margin-left: 4rem;
-        align-items: center;
-        justify-content: space-evenly;
-      }
-      .colors {
-        height: 2.5rem;
-        width: 4rem;
-      }
-      .lightpink {
-        background-color: lightpink;
-      }
-
-      .lightblue {
-        background-color: lightblue;
-      }
-      .lightgreen {
-        background-color: lightgreen;
-      }
-      .lightyellow {
-        background-color: lightyellow;
-      }
-
-      .add-delete-button {
-        margin-left: 2rem;
-        background-color: black;
-        height: 3rem;
-        width: 8rem;
-        display: flex;
-      }
-      .add-delete-button > * {
-        width: 50%;
-        display: flex;
-        align-items: center;
+        background-color: rgb(9, 8, 8);
         justify-content: center;
-        font-size: 2rem;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .weather {
+        display: flex;
         color: white;
+        align-items: center;
       }
-      .add-button:hover {
-        background-color: green;
-      }
-      .delete-button:hover {
-        background-color: red;
-      }
-      .main-container {
-        gap: 2rem;
+      nav {
+        height: 100px;
+        padding: 1rem 0;
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        background-color: rgba(180, 177, 177, 0.202);
         display: flex;
         justify-content: center;
-      }
-      .ticket-container {
-        width: 15rem;
-        height: 15rem;
-        background-color: coral;
-      }
-      .color-priority {
-        background-color: black;
-        height: 1rem;
-      }
-      .id-container {
-        background-color: yellow;
-        height: 2rem;
-      }
-      .lock-btn {
-        /* margin-left:13.5rem;
-        margin-top:9rem; */
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 1rem;
-        margin-top: 9rem;
-      }
-      .popup-container {
-        height: 15rem;
-        width: 35rem;
-        display: none;
-        position: absolute;
-        top: 30%;
-        left: 27%;
-      }
-      .textarea-container {
-        width: 70%;
-        border: none;
-        height: 100%;
-        background-color: lightgray;
-        resize: none;
-      }
-
-      .color-container {
-        background-color: #3d3d3d;
-        width: 30%;
-        display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
       }
-      .colorsprior {
-        height: 3rem;
-        width: 5rem;
+      .searchField {
+        border: 0px solid;
+        width: 600px;
+        height: 30px;
+        margin: 2px;
+        background-color: rgba(180, 177, 177, 0.202);
+        outline: none;
+        border: 2px solid white;
+      }
+      #search {
+        width: 150px;
+        height: 30px;
+        padding: 1px;
       }
     </style>
   </head>
   <body>
-    <!-- Toolbar container -->
     <div class="container">
-      <!-- color filters -->
-      <div class="menu-container">
-        <div class="colors lightpink"></div>
-        <div class="colors lightblue"></div>
-        <div class="colors lightgreen"></div>
-        <div class="colors lightyellow"></div>
-      </div>
-      <!-- add and delete button -->
-      <div class="add-delete-button">
-        <div class="add-button">
-          <i class="fa-solid fa-plus"></i>
+      <div class="weather">
+        <div class="temp">temp</div>
+        <div class="time-location">
+          <p>Mumbai</p>
+          <span>date and time</span>
         </div>
-        <div class="delete-button">
-          <i class="fa-solid fa-trash"></i>
+        <div>
+          <img src="" alt="" />
+          <span>partly cloudy</span>
         </div>
       </div>
     </div>
-    <div class="main-container">
-      <!-- <div class="ticket-container">
-        <div class="color-priority"></div>
-        <div class="id-container">15468xyz</div>
-        <div class="task-container">go to gym</div>
-        <div class="lock-btn">
-          <i class="fa-solid fa-lock"></i>
-        </div> -->
-      </div>
-    </div>
-    <div class="popup-container">
-      <textarea placeholder="Enter the task" class="textarea-container"></textarea>
-      <div class="color-container">
-        <div class="colorsprior lightpink"></div>
-        <div class="colorsprior lightblue"></div>
-        <div class="colorsprior lightgreen"></div>
-        <div class="colorsprior lightyellow"></div>
-      </div>
-    </div>
-    <script
-      src="https://kit.fontawesome.com/03e01bd24a.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./problem.js"></script>
+    <nav>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter your location"
+          class="searchField"
+        />
+        <button type="submit" id="search">Search</button>
+      </form>
+    </nav>
   </body>
+  <script></script>
 </html>

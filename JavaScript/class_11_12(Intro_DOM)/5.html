@@ -65,6 +65,7 @@
       console.log(cardNodeList);
       for (let i = 0; i < cardNodeList.length; i++) {
         cardNodeList[i].addEventListener("click", function (e) {
+          console.log(e);
           let classTobeAttached = e.currentTarget.getAttribute("data-color");
           e.currentTarget.classList.add(classTobeAttached);
           e.currentTarget.setAttribute("data-color", "used");

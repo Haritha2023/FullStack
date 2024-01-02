@@ -41,3 +41,28 @@ let obj2 = {
 };
 
 obj2.testFunction();
+
+//In strict mode
+console.log(this); //{}
+//this inside a function
+function test() {
+  console.log(this); //undefined
+}
+test();
+
+const obj1 = {
+  name: "Haritha",
+  age: 35,
+  getName: function () {
+    console.log(this.name);
+    console.log(this); //object
+  },
+  getAge: function () {
+    function getYear() {
+      console.log(this, "This is console of obj-function-function"); // undefined
+    }
+    getYear();
+  },
+};
+obj1.getName();
+obj1.getAge();

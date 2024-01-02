@@ -42,3 +42,28 @@ let obj2 = {
 };
 
 obj2.testFunction();
+
+//In non-strict mode
+console.log(this); //{}
+//this inside a function
+function test() {
+  console.log(this); //global object
+}
+test();
+
+const obj1 = {
+  name: "Haritha",
+  age: 35,
+  getName: function () {
+    console.log(this.name);
+    console.log(this); //object
+  },
+  getAge: function () {
+    function getYear() {
+      console.log(this, "This is console of obj-function-function"); // global object
+    }
+    getYear();
+  },
+};
+obj1.getName();
+obj1.getAge();

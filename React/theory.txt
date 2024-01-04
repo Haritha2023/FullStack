@@ -1,3 +1,63 @@
 2/1/2024
 ---------
 what is modularity?
+A. we can create a module we can use anywhere where we want 
+create a calculator 5 functions 
+export using "module.exports" and import using "require"
+
+https://legacy.reactjs.org/docs/cdn-links.html cdn-links React
+cdn - content delivery networks
+
+using these two links
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+2. what is create Element in react?
+A. createElement is returns object
+what is render?
+it is converting object created by createElement into html element
+
+3. what is jsx?
+A. it is a way writing html in js
+
+Build Tools:
+-----------
+1. CRA - create react App- it will create whole bioler code of react
+2. vite - 
+3. parcel
+4. browsify
+
+
+Create React App:
+
+1. open teminal in the folder where you want
+2. npx create-react-app . for create in the folder
+
+Library:
+--------
+it is little code to work
+
+                        Create vite react app:
+                        --------------------
+
+https://vitejs.dev/guide/ official website
+
+https://makimo.com/blog/why-we-use-vite-instead-of-create-react-app/
+npm create vite@latest
+select project name
+select react
+select javascript
+
+difference between cra and vite react app
+
+cra: it will take time to install, it will use webpack, it provides complete bundle
+
+vite: it will install in short time than cra, it will use parcel, it use tree shaking
+    means we can use what we want, it will use hot module replacement
+
+
+4/1/2024
+---------
+jsx: jsx will allow you to write html inside javascript
+
+component : it is section in a application

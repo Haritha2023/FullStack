@@ -7,6 +7,7 @@ Array.prototype.myReduce = function (cb, initialValue) {
   let firstIndex;
 
   if (arguments.length === 1) {
+    // all values we passed to function will come to arguments arr
     accumulator = this[0];
     firstIndex = 1;
   } else {
@@ -35,3 +36,6 @@ function calculateSum(accumulator, currentValue) {
 let sum = arr2.myReduce(calculateSum);
 
 console.log(sum);
+
+//if we don't pass  initial val 0, it will take first val of array as initial value
+// 1st ele as acc, loop

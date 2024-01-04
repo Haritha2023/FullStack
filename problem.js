@@ -1,87 +1,104 @@
-//PROBLEMS GOT IN CONTEST
-// function outer() {
-//   let x = 5;
-//   return function inner(y) {
-//     x += y;
-//     return x;
-//   };
-// }
+const names = ["Haritha", "Ravi", "Isha", "Goutham"];
 
-// let closureFn = outer();
-// console.log(closureFn(3));
-// console.log(closureFn(2));
+//for each
+// names.forEach((name) => {
+//   console.log(name);
+// });
 
-// function outer() {
-//   let x = 10;
-//   function inner() {
-//     console.log(x);
+//for each polyfill
+// console.log(Array.prototype); // check  before add polyfill added
+// Array.prototype.myForEach = function (callback) {
+//   console.log(Array.prototype);
+//   console.log(this);
+//   for (let i = 0; i < this.length; i++) {
+//     callback(this[i]);
 //   }
-//   x = 20;
-//   return inner;
+// };
+
+// function cb(name) {
+//   console.log(name);
 // }
 
-// let closureFn = outer();
-// closureFn();
+// names.myForEach(cb);
 
-// function delay(ms) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       resolve(ms);
-//     }, ms);
-//   });
+//******Map */
+const numbers = [1, 2, 3, 4];
+
+// const squreNum = numbers.map(function (num) {
+//   return num * num;
+// });
+
+// console.log(squreNum);
+
+// console.log(Array.prototype);
+// Array.prototype.myMap = function (callback) {
+//   console.log(Array.prototype);
+//   let result = [];
+//   for (let i = 0; i < this.length; i++) {
+//     result.push(callback(this[i]));
+//   }
+//   return result;
+// };
+
+// function squreNum(num) {
+//   return num * num;
 // }
 
-// async function foo() {
-//   console.log("start foo");
-//   await delay(1000);
-//   console.log("Middle");
-//   await delay(2000);
-//   console.log("end foo");
-// }
+// let finalArr = numbers.myMap(squreNum);
+// console.log(finalArr);
 
-// foo();
-// console.log("after foo");
+// const even = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-// const number = 5;
-// function mul(x) {
-//   number = x * 2;
-// }
+// const evenNum = even.filter(function (num) {
+//   return num % 2 === 0;
+// });
+// console.log(evenNum);
 
-// mul(10);
-// console.log(number);
-
-// const contacts = [
-//   { firstName: "Tom", lastName: "Jackson", number: "0123456" },
-//   { firstName: "Linda", lastName: "Garner", number: "11111111" },
-//   { firstName: "Adam", lastName: "Cooper", number: "2222222" },
-// ];
-
-// function lookUpProfile(name, prop) {
-//   const filteredContacts = contacts.filter((contact) => {
-//     return name === contact.firstName;
-//   });
-
-//   if (filteredContacts.length > 0) {
-//     if (filteredContacts[0][prop] !== undefined) {
-//       console.log(filteredContacts[0][prop]);
-//     } else {
-//       console.log("No such property");
+// Array.prototype.myFilter = function (callback) {
+//   let resultArr = [];
+//   for (let i = 0; i < this.length; i++) {
+//     if (callback(this[i])) {
+//       resultArr.push(this[i]);
 //     }
-//   } else {
-//     console.log("No such contact");
 //   }
+//   return resultArr;
+// };
+
+// function isEven(num) {
+//   return num % 2 === 0;
 // }
 
-// // Example usage
-// lookUpProfile("Tom", "number");
+// let finalArr = even.myFilter(isEven);
+// console.log(finalArr);
 
-function printName(name) {
-  console.log(name);
+const arr = [1, 2, 3, 4, 5];
+
+// let sum = arr.reduce(function (acc, val) {
+//   return acc + val;
+// }, 0);
+
+// console.log(sum);
+
+Array.prototype.myReduce = function (callback, intialVal) {
+  // let acc = intialVal;
+  let acc;
+  let firstIndex;
+  if (arguments.length == 1) {
+    acc = this[0];
+    firstIndex = 1;
+  } else {
+    acc = intialVal;
+    firstIndex = 0;
+  }
+  for (let i = firstIndex; i < this.length; i++) {
+    acc = callback(acc, this[i]);
+  }
+  return acc;
+};
+
+function sum(acc, val) {
+  return acc + val;
 }
 
-function printFirstName(firstName, cb) {
-  console.log("First Name: " + firstName);
-  cb("Haritha");
-}
-
-printFirstName("Sadanala", printName);
+let finalArr = arr.myReduce(sum, 0);
+console.log(finalArr);

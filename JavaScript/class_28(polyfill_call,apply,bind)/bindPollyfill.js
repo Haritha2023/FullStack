@@ -7,6 +7,7 @@ function buyCar(price) {
   console.log(`I bought a ${this.color} ${this.name} of ${price} `);
 }
 
+buyCar.bind(car, "300000");
 //return a function
 
 //Bind Polyfill

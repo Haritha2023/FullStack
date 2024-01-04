@@ -42,6 +42,8 @@
 
 // console.log(ans)
 
+// output **** : {26:2, 50: 3, 75: 1}
+
 // method Chaining
 
 // // Q4 Print the names of students who scored more than 60

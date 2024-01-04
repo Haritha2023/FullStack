@@ -13,3 +13,10 @@ function mul(a, b) {
 function div(a, b) {
   console.log(a / b);
 }
+
+module.exports = {
+  addition: add,
+  substraction: sub,
+  multiplication: mul,
+  divsion: div,
+};

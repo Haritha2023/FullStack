@@ -33,3 +33,6 @@ function sqaure(num) {
 let finalArray = numbers.myMap(sqaure);
 
 console.log(finalArray);
+
+//if you create function that polyfill should be add in a object defination----prototype
+//we have to add in prototype so we can use anywhere

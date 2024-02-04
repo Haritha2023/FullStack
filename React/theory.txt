@@ -48,6 +48,25 @@ select project name
 select react
 select javascript
 
+cd vite-project
+npm install
+npm run dev  ----- to run the project in development
+
+remove all unnecessary code from app.jsx
+
+npm install react-router-dom for router
+
+import browser router and router in app.jsx
+
+npm install react-redux     
+npm install @reduxjs/toolkit
+
+
+steps to create store
+---------------------
+1. create slice, 2. create Store, 3. add slice in store, 
+4. wrap whole app in provider and provide store
+
 difference between cra and vite react app
 
 cra: it will take time to install, it will use webpack, it provides complete bundle
@@ -61,3 +80,9 @@ vite: it will install in short time than cra, it will use parcel, it use tree sh
 jsx: jsx will allow you to write html inside javascript
 
 component : it is section in a application
+
+https://legacy.reactjs.org/docs/lists-and-keys.html
+
+https://github.com/mrinal1224/Coolest_batch_fullstack.git
+
+

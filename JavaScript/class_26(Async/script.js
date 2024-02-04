@@ -71,3 +71,7 @@ async function executePromiseAsync() {
 
 // it will more priority to the promise first promise will print after that console
 executePromiseAsync();
+
+//async will return promise and state of promise
+//await will wait for promise
+//async and await will make async code into sync

@@ -63,38 +63,35 @@ promiseReadFile3.then(readFileCallback).catch(hadleError);
 
 //promise practice
 
-// let myPromise = new Promise(function (resolve, reject) {
-//   let a = 4;
-//   let b = 4;
-
-//   if (a === b) {
-//     resolve("They are equal");
+// let myPromise = new Promise((resolve, reject) => {
+//   let a = 10;
+//   let b = 10;
+//   if (a == b) {
+//     resolve("a and b are equal");
 //   } else {
-//     reject("They are not equal");
+//     reject("a and b are not equal");
 //   }
 // });
 
-// myPromise.then(function (res) {
-//   console.log("res");
+// myPromise.then(function (result) {
+//   console.log(result);
 // });
-// myPromise.catch(function (err) {
-//   console.log("err");
+// myPromise.catch(function (error) {
+//   console.log(error);
 // });
 
 // const fs = require("fs");
 
-// let promiseReadFile4 = fs.promises.readFile("f1.txt");
-// let promiseReadFile5 = fs.promises.readFile("f2.txt");
-// let promiseReadFile6 = fs.promises.readFile("f3.txt");
+// let promiseReadFile1 = fs.promises.readFile("f1.txt");
+// let promiseReadFile2 = fs.promises.readFile("f2.txt");
+// let promiseReadFile3 = fs.promises.readFile("f3.txt");
 
-// function readFile1(data) {
-//   console.log("the data is -> " + data);
+// function readFileCallback(data) {
+//   console.log("data from file" + data);
 // }
-
-// function hadleError2(err) {
+// function readErrorCallback(error) {
 //   console.log(error);
 // }
-
-// promiseReadFile4.then(readFile1).catch(hadleError2);
-// promiseReadFile5.then(readFile1).catch(hadleError2);
-// promiseReadFile6.then(readFile1).catch(hadleError2);
+// promiseReadFile1.then(readFileCallback).catch(readErrorCallback);
+// promiseReadFile2.then(readFileCallback).catch(readErrorCallback);
+// promiseReadFile3.then(readFileCallback).catch(readErrorCallback);

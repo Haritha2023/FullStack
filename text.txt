@@ -277,3 +277,8 @@ A. Document Object model
     - By using tree sructure you can traverse efficiently though the different nodes
     - DOM is responsible for the interactivity for the web page
 
+20/102024
+---------
+when to use redux?
+-> High frequency of state changes
+-> dynamic data- it is communicate with external sources

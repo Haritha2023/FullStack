@@ -1,0 +1,32 @@
+NodeJs- is a run-time environment for javascript
+nodejs-inbuilt modules-https://nodejs.org/api/modules.html
+How replacing Java with JavaScript is paying off for PayPal
+https://www.zdnet.com/article/how-replacing-java-with-javascript-is-paying-off-for-paypal/
+
+https://github.com/mrinal1224/FJP-3-Dev/tree/master/4_FIle%20System%20Organizer
+
+9/2/2024
+--------
+ONLY NODE JS IS NOT THE RECOMMENDED OPTION TO WORK AT BACKEND
+
+node: much more boilerplate code
+
+express: framework --- defacto framework 
+
+https://expressjs.com/
+
+https://www.npmjs.com/package/express
+
+steps to install express:
+========================
+
+1. open integrated terminal in a folder
+create server.js for developement
+2. npm init -- enter enter --- it will create a pakage.json
+3. npm i express--- create node modulues and package-lock.json and check package.json
+    for express and version
+4. for every change we need to restart the server for getting the latest
+    for the we need to install npm i nodemon
+    it will give error so need to install globally
+    npx install nodemon
+    checking command -- nodemon server.js
